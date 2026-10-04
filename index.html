@@ -11,21 +11,26 @@
 
 <body>
 
+    <!-- Header -->
     <header>
         <h1>Student Management System</h1>
         <p>Manage student information easily</p>
     </header>
 
+
     <main>
 
+        <!-- Student Form -->
         <section class="form-section">
 
             <h2>Add Student</h2>
 
             <form id="studentForm">
 
+                <!-- Student ID -->
                 <div class="form-group">
                     <label for="studentId">Student ID</label>
+
                     <input
                         type="text"
                         id="studentId"
@@ -34,8 +39,11 @@
                     >
                 </div>
 
+
+                <!-- Name -->
                 <div class="form-group">
                     <label for="studentName">Full Name</label>
+
                     <input
                         type="text"
                         id="studentName"
@@ -44,8 +52,11 @@
                     >
                 </div>
 
+
+                <!-- Email -->
                 <div class="form-group">
                     <label for="email">Email</label>
+
                     <input
                         type="email"
                         id="email"
@@ -54,8 +65,11 @@
                     >
                 </div>
 
+
+                <!-- Phone -->
                 <div class="form-group">
                     <label for="phone">Phone</label>
+
                     <input
                         type="tel"
                         id="phone"
@@ -64,31 +78,94 @@
                     >
                 </div>
 
+
+                <!-- Department -->
                 <div class="form-group">
                     <label for="department">Department</label>
 
                     <select id="department" required>
-                        <option value="">Select Department</option>
-                        <option value="Computer Science">Computer Science</option>
-                        <option value="Information Technology">Information Technology</option>
-                        <option value="Electronics">Electronics</option>
-                        <option value="Mechanical">Mechanical</option>
-                        <option value="Civil">Civil</option>
+
+                        <option value="">
+                            Select Department
+                        </option>
+
+                        <option value="Computer Science">
+                            Computer Science
+                        </option>
+
+                        <option value="Information Technology">
+                            Information Technology
+                        </option>
+
+                        <option value="Electronics">
+                            Electronics
+                        </option>
+
+                        <option value="Mechanical">
+                            Mechanical
+                        </option>
+
+                        <option value="Civil">
+                            Civil
+                        </option>
+
                     </select>
                 </div>
 
+
+                <!-- Year -->
                 <div class="form-group">
                     <label for="year">Year</label>
 
                     <select id="year" required>
-                        <option value="">Select Year</option>
-                        <option value="1st Year">1st Year</option>
-                        <option value="2nd Year">2nd Year</option>
-                        <option value="3rd Year">3rd Year</option>
-                        <option value="4th Year">4th Year</option>
+
+                        <option value="">
+                            Select Year
+                        </option>
+
+                        <option value="1st Year">
+                            1st Year
+                        </option>
+
+                        <option value="2nd Year">
+                            2nd Year
+                        </option>
+
+                        <option value="3rd Year">
+                            3rd Year
+                        </option>
+
+                        <option value="4th Year">
+                            4th Year
+                        </option>
+
                     </select>
                 </div>
 
+
+                <!-- Result -->
+                <div class="form-group">
+                    <label for="result">Result</label>
+
+                    <select id="result" required>
+
+                        <option value="">
+                            Select Result
+                        </option>
+
+                        <option value="Pass">
+                            Pass
+                        </option>
+
+                        <option value="Fail">
+                            Fail
+                        </option>
+
+                    </select>
+                </div>
+
+
+                <!-- Submit Button -->
                 <button type="submit">
                     Add Student
                 </button>
@@ -98,9 +175,12 @@
         </section>
 
 
+
+        <!-- Student Records -->
         <section class="students-section">
 
             <div class="section-header">
+
                 <h2>Student Records</h2>
 
                 <input
@@ -108,32 +188,49 @@
                     id="searchInput"
                     placeholder="Search students..."
                 >
+
             </div>
 
+
+            <!-- Student Table -->
             <div class="table-container">
 
                 <table>
 
                     <thead>
+
                         <tr>
+
                             <th>Student ID</th>
+
                             <th>Name</th>
+
                             <th>Email</th>
+
                             <th>Phone</th>
+
                             <th>Department</th>
+
                             <th>Year</th>
+
+                            <th>Result</th>
+
                             <th>Actions</th>
+
                         </tr>
+
                     </thead>
 
-                    <tbody id="studentTableBody">
 
+                    <tbody id="studentTableBody">
                     </tbody>
 
                 </table>
 
             </div>
 
+
+            <!-- Empty message -->
             <p id="emptyMessage">
                 No students added yet.
             </p>
@@ -143,11 +240,19 @@
     </main>
 
 
+
+    <!-- Footer -->
     <footer>
-        <p>Student Management System | Built with HTML, CSS & JavaScript</p>
+
+        <p>
+            Student Management System |
+            Built with HTML, CSS & JavaScript
+        </p>
+
     </footer>
 
 
+    <!-- JavaScript -->
     <script src="script.js"></script>
 
 </body>
